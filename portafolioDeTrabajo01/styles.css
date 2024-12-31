@@ -10,6 +10,9 @@ body {
 #container {
     margin: 0 auto;
     width: 80%;
+    padding: 30px;
+    background:  rgb(221, 191, 191);
+    border-radius: 10px; /* Crea un círculo */
     display: grid;
     grid-template-areas: 'header'
         'nav'
@@ -22,24 +25,28 @@ body {
 
 header {
     grid-area: header;
-    background: red;
+    background: #df31e0;
     text-align: center;
+    padding-top: 3%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+header p{
+    background: #0de0c0;
 }
 
 nav {
     grid-area: nav;
-    background: yellow;
+    background: rgb(252, 252, 233);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 100px;
 }
 
-aside{
-    grid-area: aside;
-}
 nav ul li{
     display: inline;
     list-style: none;
+    margin-left: 20px;
 }
 
 section {
@@ -47,7 +54,7 @@ section {
     margin: 0 auto;
     text-align: center;
     grid-area: section;
-    background: green;
+    background: rgb(227, 241, 227);
     display: grid;
     grid-template-columns: auto auto;
 
@@ -56,5 +63,8 @@ section {
 footer {
     text-align: center;
     grid-area: footer;
-    background: grey;
+    background: rgb(207, 206, 206);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
